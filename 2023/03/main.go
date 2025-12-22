@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/bsiegert/adventofcode2023/03/grid"
+	"github.com/bsiegert/adventofcode/2023/03/grid"
 )
 
 func fileSum(filename string) error {
