@@ -10,4 +10,11 @@ run-example: day02.st
 
 check: day02.st day02-test.st
 	${GST_SUNIT} -v  -f day02.st -f day02-test.st Day02Test
+	${GST_SUNIT} -v  -f day02b.st -f day02b-test.st Day02Test
 	
+runb: day02b.st
+	${GST} -f day02b.st input
+
+runb-example: day02b.st
+	${GST} -f day02b.st example
+
