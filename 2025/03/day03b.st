@@ -4,18 +4,6 @@ Object subclass: Day03 [
 	init [ sum := 0 ]
 	sum  [ ^sum ]
 
-	isInvalid: id [
-		| ids halfLen |
-
-		ids := id asString.
-		"has to be an even length."
-		(ids size \\ 2 = 1) ifTrue: [ ^false ].
-		
-		halfLen := ids size // 2.
-		"first half = second half"
-		^((ids first: halfLen) = (ids allButFirst: halfLen))
-	]
-
 	findHighestDigit: str [
 		| digits n |
 		
